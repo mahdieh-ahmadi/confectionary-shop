@@ -1,0 +1,23 @@
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 90vh max-content max-content max-content;
+}
+
+@import 'content/style.scss';
+@import 'content/header';
+@import 'content/view';
+@import 'content/about';
+@import 'content/filter';
+@import 'content/cards'

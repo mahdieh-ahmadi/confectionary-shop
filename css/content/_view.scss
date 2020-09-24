@@ -1,0 +1,77 @@
+.view{
+    background-image:  linear-gradient(120deg , rgba(255, 240, 240, 0.699),rgba(253, 201, 201, 0.712)) ,url(img/background.jpg) ,;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__title{
+        font-size: 2rem;
+        &--name{
+            font-size: 2.8rem;
+        }
+    }
+
+    &__btn{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
+        &:hover{
+            box-shadow: 0 2px 5px rgb(122, 122, 122);
+        }
+    }
+}
+
+.list{
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.678);
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: -50px;
+    padding: 1rem 1.2rem;
+    display: block;
+    transition: all 0.5s ease-in-out;
+
+    &__show{
+        width: 20rem;
+        right: 0;
+        transform: rotateY(360deg);
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--img{
+            height: 4rem;
+            width: 4rem;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        &--detail{
+            &-name{
+                font-weight: 1000;
+                font-size: 1.3rem;
+            }
+
+            &-fee{
+                font-size: 1rem;
+            }
+        }
+
+        &--icon{
+            background-color: transparent;
+            color: red;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}
