@@ -43,7 +43,6 @@ newcard.innerHTML=`
 list.appendChild(newcard)
 alert('add order is done')
 const items = document.querySelectorAll('.list__item')
-console.log(items.length)
 navbtn.children[1].textContent=`${items.length} item`
 let newfee = +navbtn.children[2].children[0].textContent
 navbtn.children[2].children[0].textContent = newfee + neworder.fee
